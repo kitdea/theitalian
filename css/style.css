@@ -19,6 +19,7 @@ body {
 .ita-logo a {
   font-family: 'Italianno', cursive;
   font-size: 2.8rem;
+  font-weight: 400;
   color: #fff;
   text-decoration: none;
 }
@@ -110,12 +111,40 @@ body {
 
 .ita-original-content p {
   font-size: calc(1rem + .1vw);
+  font-weight: 100;
+}
+
+.ita-menu {
+  padding: 40px 10px;
+  background-color: #ffe9d4;
+}
+
+.ita-cuisine_box {
+  margin: 40px 20px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.199);
+}
+
+.ita-cuisine_box img {
+  width: 100%;
+}
+
+.ita-cuisine_box h4 {
+  color: #CA6100;
+  font-family: 'Italianno', cursive;
+  font-size: calc(1.8rem + .1vw);
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
 }
 
 @media(min-width: 768px){
+  .ita-header {
+    width: 100%;
+  }
   nav {
     display: flex;
-    width: 100%;
     margin: 0 auto;
   }
 
@@ -144,7 +173,7 @@ body {
   }
 
   .ita-content {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
   }
 
@@ -168,12 +197,23 @@ body {
   .ita-original-content {
     padding: 50px 0 50px 50px;
   }
+
+  .ita-menu {
+    padding: 100px 0;
+  }
+
+  .ita-menu-cuisine {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 @media(min-width: 1024px){
    nav {
     display: flex;
-    width: 1100px;
+    
     margin: 0 auto;
   }
 
@@ -184,6 +224,10 @@ body {
   }
 
   .ita-original-column {
+    width: 900px;
+  }
+
+  .ita-menu-cuisine {
     width: 900px;
   }
 }
