@@ -17,7 +17,7 @@ body, html {
 .ita-header {
   color: #fff;
   background-color: #CA6100;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .ita-logo a {
@@ -37,6 +37,31 @@ body, html {
   text-decoration: none;
   color: #fff;
   transition: .5s ease-in-out;
+}
+
+.ita-navmenu {
+  position: relative;
+  padding: 10px;
+  /* background-color: #ffe9d4; */
+}
+
+.ita-navmenu li {
+  padding: 10px;
+  z-index: 100;
+  transition-duration: 1ms;
+  cursor: pointer;
+}
+
+.ita-navmenu li:hover {
+  width: 100%;
+  padding: 10px;
+  transition-duration: 1ms;
+  background-color: #ffe9d4;
+}
+
+.ita-navmenu li:hover a {
+  color: #CA6100;
+  transition-duration: 1ms;
 }
 
 .ita-container {
@@ -300,6 +325,7 @@ input:focus, textarea:focus {
 @media(min-width: 768px){
   .ita-header {
     width: 100%;
+    padding: 10px;
   }
   nav {
     display: flex;
