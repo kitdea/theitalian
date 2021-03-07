@@ -10,6 +10,10 @@ body {
   font-weight: 400;
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 .ita-header {
   color: #fff;
   background-color: #CA6100;
@@ -75,7 +79,7 @@ body {
   transition: 0.5s;
   background-size: 200% auto;            
   /* box-shadow: 0 0 2px  rgb(92, 92, 92); */
-  border-radius: 50px;
+  border-radius: 20px 0;
   display: block;
   border: none;
   cursor: pointer;
@@ -196,6 +200,7 @@ body {
 }
 
 .ita-contact-form button, input, textarea {
+  font-family: 'Lato', cursive;
   padding: 20px 10px;
   width: 100%;
   border: 0;
@@ -235,6 +240,63 @@ input:focus, textarea:focus {
   text-decoration: none;
 }
 
+.ita-footer {
+  background-color: #fff;
+  padding: 40px 10px;
+  box-shadow: 0 0 22px #5353531a;
+}
+
+.ita-footer-copyright {
+  color: #fff;
+  text-align: center;
+  background-color:#535353;
+  padding: 40px;
+  transition-duration: 500ms;
+}
+
+.ita-footer-content h3 {
+  color: #5f5f5f;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.ita-footer-socialmedia-icons ul {
+  display: flex;
+  list-style: none;
+}
+
+.ita-footer-socialmedia-icons li {
+  padding: 10px;
+  margin-top: 10px;
+} 
+
+.ita-footer-socialmedia-icons i{
+  color: #535353;
+  transition-duration: 500ms;
+}
+
+.ita-footer-socialmedia-icons i:hover {
+  color: #CA6100;
+}
+
+.ita-logo {
+  text-align: center;
+}
+
+.ita-logo img {
+  margin-top: 10px;
+  width: 120px;
+   filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition-duration: 500ms;
+}
+
+.ita-logo img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
 @media(min-width: 768px){
   .ita-header {
     width: 100%;
@@ -244,7 +306,7 @@ input:focus, textarea:focus {
     margin: 0 auto;
   }
 
-  ul {
+  .ita-header ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -366,6 +428,21 @@ input:focus, textarea:focus {
     padding: 14px 10px;
     margin-top: 6px;
   }
+
+  .ita-footer {
+    width: 100%;
+    padding: 100px 30px;
+    margin: 0 auto;
+  }
+
+  .ita-footer-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 
 @media(min-width: 1024px){
@@ -415,5 +492,15 @@ input:focus, textarea:focus {
 
   .ita-contact-form {
     width: 50%;
+  }
+
+  .ita-footer {
+    padding: 100px 20px;
+    margin: 0 auto;
+  }
+
+  .ita-footer-column {
+    width: 70%;
+    padding: 20px 30px;
   }
 }

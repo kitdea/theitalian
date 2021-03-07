@@ -8,17 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@300;400;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
   <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="ita-header">
+    <div class="ita-header" id="index">
       <nav >
-        <div class="ita-logo"><a href="#"><h3>The Italian</h3></a></div>
+        <div class="ita-logo"><a href="index.html"><h3>The Italian</h3></a></div>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +49,7 @@
     </div>
   </section>
   <section>
-    <div class="ita-menu">
+    <div class="ita-menu" id="menu">
       <div class="ita-menu-column">
         <div class="ita-menu-cuisine">
           <div class="ita-cuisine_box">
@@ -78,7 +81,7 @@
     </div>
   </section>
   <section>
-    <div class="ita-about">
+    <div class="ita-about" id="about">
       <div class="ita-about-column">
         <div class="ita-about-image">
           <img src="/images/chef.jpg">
@@ -97,7 +100,7 @@
     </div>
   </section>
   <section>
-    <div class="ita-contact">
+    <div class="ita-contact" id="contact">
       <div class="ita-contact-column">
         <div class="ita-contact-image">
           <img src="/images/contact-us-img.jpg">
@@ -113,6 +116,33 @@
       </div>
     </div>
   </section>
+<footer>
+  <div class="ita-footer">
+    <div class="ita-footer-column">
+      <div class="ita-footer-content">
+        <h3>CONTACT US</h3>
+        <p>johnsmith@email.com</p>
+        <p>+63 001 123 4567</p>
+          <div class="ita-footer-socialmedia-icons">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram-square fa-2x"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="ita-logo">
+        <a href="#index">
+          <img src="/images/the-italian.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="ita-footer-copyright">
+    <p>Copyright 2021</p>
+    <p>No Rights Reserved</p>
+  </div>
+</footer>
   <script src="/js/script.js"></script>
 </body>
 </html>
