@@ -322,7 +322,7 @@ input:focus, textarea:focus {
 @media(min-width: 768px){
   .ita-header {
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
   }
   nav {
     display: flex;
