@@ -39,14 +39,8 @@ body, html {
   transition-duration: 100ms;
 }
 
-.ita-navmenu {
-  position: relative;
-  padding: 10px;
-  /* background-color: #ffe9d4; */
-}
-
 .ita-navmenu li {
-  padding: 10px;
+  padding: 14px;
   z-index: 100;
   transition-duration: 100ms;
   cursor: pointer;
