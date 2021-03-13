@@ -386,6 +386,7 @@ input:focus, textarea:focus {
   }
 
   .ita-navmenu {
+    display: flex !important;
     padding: 0;
   }
 
@@ -398,7 +399,7 @@ input:focus, textarea:focus {
   }
 
   .ita-navmenu li {
-    padding: 24px 30px
+    padding: 27px 30px;
   }
 
   .ita-container {
