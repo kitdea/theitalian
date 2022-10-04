@@ -171,24 +171,47 @@ nav {
 
 .ita-cuisine_box {
   margin: 40px 20px;
-  padding-bottom: 10px;
   background-color: #fff;
   box-shadow: 0 0 22px rgba(0, 0, 0, 0.199);
-  border-radius: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
 }
 
 .ita-cuisine_box img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+
+.ita-cuisine_box:hover img {
+  transform: scale(1.2);
 }
 
 .ita-cuisine_box h4 {
-  color: #EA4C20;
-  font-family: 'Italianno', cursive;
-  font-size: calc(1.8rem + .1vw);
-  font-weight: 400;
+  color: #fff;
+  background-color: rgba(234, 76, 32, 0.815);
+  font-family: 'Lato', sans-serif;
+  font-size: calc(1.4rem + .1vw);
   text-align: center;
-  margin-top: 10px;
+  display: none;
+  margin: auto;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.ita-cuisine_box:hover h4 {
+  display: block;
 }
 
 .ita-about {
@@ -198,7 +221,7 @@ nav {
 
 .ita-about-image img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .ita-about-content h3 {
@@ -257,6 +280,7 @@ nav {
   color: grey;
   background-color: #ffe9d4;
   margin: 10px 0;
+  border-radius: 5px;
 }
 
 input::placeholder, textarea::placeholder {
@@ -277,7 +301,7 @@ input:focus, textarea:focus {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  border-radius: 10px 0 10px 0;
+  border-radius: 5px;
   display: block;
   border: none;
   cursor: pointer;
@@ -490,13 +514,14 @@ input:focus, textarea:focus {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 22px rgba(0, 0, 0, 0.199);
   }
 
   .ita-contact-image img {
     width: 100%;
     transition-duration: 500ms;
+    border-radius: 5px;
   }
 
   .ita-contact-form {
