@@ -124,16 +124,15 @@ nav {
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  background-size: 200% auto;            
-  /* box-shadow: 0 0 2px  rgb(92, 92, 92); */
-  border-radius: 20px 0;
+  background-size: 200% auto;           
+  border-radius: 5px;
   display: block;
   border: none;
   cursor: pointer;
 }
 
 .ita-content button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center; /* change the direction of the gradient here */
   color: #fff;
   text-decoration: none;
 }
@@ -148,7 +147,7 @@ nav {
 
 .ita-original-image img {
   width: 100%;
-
+  border-radius: 10px;
 }
 
 .ita-original-content h2 {
@@ -175,10 +174,12 @@ nav {
   padding-bottom: 10px;
   background-color: #fff;
   box-shadow: 0 0 22px rgba(0, 0, 0, 0.199);
+  border-radius: 10px;
 }
 
 .ita-cuisine_box img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .ita-cuisine_box h4 {
@@ -197,6 +198,7 @@ nav {
 
 .ita-about-image img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .ita-about-content h3 {
@@ -227,7 +229,7 @@ nav {
 
 .ita-contact-image img {
   width: 100%;
-  border-radius: 20px 0 20px 0;
+  border-radius: 10px;
 }
 
 .ita-contact-form h3 {
