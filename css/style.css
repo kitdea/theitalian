@@ -201,13 +201,12 @@ nav {
   display: none;
   margin: auto;
   position: absolute;
-  /* top: 0; */
   left: 0;
   bottom: 0;
   right: 0;
   height: 40px;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .ita-cuisine_box:hover h4 {
