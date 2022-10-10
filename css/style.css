@@ -160,7 +160,7 @@ nav {
 }
 
 .ita-original-content p {
-  font-size: calc(1rem + .1vw);
+  font-size: calc(1.2rem + .1vw);
   font-weight: 100;
 }
 
@@ -233,13 +233,13 @@ nav {
 
 .ita-about-content h5 {
   color: #EA4C20;
-  font-family: 'Lato', cursive;
+  /* font-family: 'Lato', cursive; */
   font-size: calc(1rem + .1vw);
   font-weight: 400;
 }
 
 .ita-about-content p {
-  font-size: calc(1rem + .1vw);
+  font-size: calc(1.2rem + .1vw);
   font-weight: 100;
   margin-top: 10px;
 }
@@ -271,22 +271,25 @@ nav {
 }
 
 .ita-contact-form button, input, textarea {
-  font-family: 'Lato', cursive;
+  /* font-family: 'Lato', cursive; */
+  font-size: calc(1.2rem + .1vw);
   padding: 20px 10px;
   width: 100%;
   border: 0;
   resize: vertical;
-  color: grey;
+  color: gray;
   background-color: #ffe9d4;
   margin: 10px 0;
   border-radius: 5px;
 }
 
 input::placeholder, textarea::placeholder {
+  color: #a0a0a0;
   font-style: italic;
 }
 
 input:focus, textarea:focus {
+  color: #a0a0a0;
   outline: none;
 }
 
@@ -326,6 +329,10 @@ input:focus, textarea:focus {
   transition-duration: 500ms;
 }
 
+.ita-footer-content {
+  text-align: center;
+}
+
 .ita-footer-content h3 {
   color: #5f5f5f;
   font-size: 1.5rem;
@@ -334,6 +341,7 @@ input:focus, textarea:focus {
 
 .ita-footer-socialmedia-icons ul {
   display: flex;
+  justify-content: center;
   list-style: none;
 }
 
@@ -352,6 +360,7 @@ input:focus, textarea:focus {
 }
 
 .ita-logo {
+  margin: 0;
   text-align: center;
 }
 
@@ -489,7 +498,7 @@ input:focus, textarea:focus {
 
   .ita-about-image img {
     width: 400px;
-    transition-duration: 500ms;
+    transition-duration: .3s;
   }
 
   .ita-about-image:hover img {
@@ -545,6 +554,10 @@ input:focus, textarea:focus {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+  }
+
+  .ita-footer-content {
+    text-align: left;
   }
 }
 
